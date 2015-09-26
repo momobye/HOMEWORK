@@ -81,21 +81,4 @@
       </block>
     </next>
   </block>
-  <block type="oled_drawnumber" id="119" inline="true" x="458" y="239">
-    <value name="NUMBER">
-      <block type="math_arithmetic" id="120" inline="true">
-        <field name="OP">ADD</field>
-        <value name="A">
-          <block type="math_number" id="121">
-            <field name="NUM">2456</field>
-          </block>
-        </value>
-        <value name="B">
-          <block type="math_number" id="122">
-            <field name="NUM">43545754</field>
-          </block>
-        </value>
-      </block>
-    </value>
-  </block>
 </xml>
