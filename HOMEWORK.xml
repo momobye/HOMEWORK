@@ -1,84 +1,20 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="26" x="193" y="70">
+  <block type="oled_cleardisplay" id="1" x="193" y="70">
     <next>
-      <block type="oled_setcursor" id="35" inline="true">
+      <block type="oled_setcursor" id="2" inline="true">
         <value name="STARTX">
-          <block type="math_number" id="115">
+          <block type="math_number" id="3">
             <field name="NUM">0</field>
           </block>
         </value>
         <value name="STARTY">
-          <block type="math_number" id="116">
+          <block type="math_number" id="4">
             <field name="NUM">0</field>
           </block>
         </value>
         <next>
-          <block type="oled_drawtext" id="89">
+          <block type="oled_drawtext" id="5">
             <field name="TEXT">4+5=</field>
-            <next>
-              <block type="oled_linerect" id="248">
-                <field name="OBJECT">RECT</field>
-              </block>
-            </next>
-          </block>
-        </next>
-      </block>
-    </next>
-  </block>
-  <block type="oled_drawnumber" id="98" inline="true" disabled="true" x="105" y="225">
-    <value name="NUMBER">
-      <block type="math_arithmetic" id="108" inline="true">
-        <field name="OP">ADD</field>
-        <value name="A">
-          <block type="math_number" id="117">
-            <field name="NUM">2456</field>
-          </block>
-        </value>
-        <value name="B">
-          <block type="math_number" id="118">
-            <field name="NUM">43545754</field>
-          </block>
-        </value>
-      </block>
-    </value>
-    <next>
-      <block type="robot_delay" id="149" inline="true" disabled="true">
-        <value name="DELAY">
-          <block type="math_number" id="182">
-            <field name="NUM">2000</field>
-          </block>
-        </value>
-        <next>
-          <block type="oled_drawtext" id="225" disabled="true">
-            <field name="TEXT">Sorry i am bad at math...</field>
-            <next>
-              <block type="robot_delay" id="226" inline="true" disabled="true">
-                <value name="DELAY">
-                  <block type="math_number" id="227">
-                    <field name="NUM">1000</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="oled_drawtext" id="228" disabled="true">
-                    <field name="TEXT">the Answer is...</field>
-                    <next>
-                      <block type="robot_delay" id="229" inline="true" disabled="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="230">
-                            <field name="NUM">1000</field>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="oled_drawtext" id="233" disabled="true">
-                            <field name="TEXT">9?</field>
-                          </block>
-                        </next>
-                      </block>
-                    </next>
-                  </block>
-                </next>
-              </block>
-            </next>
           </block>
         </next>
       </block>
