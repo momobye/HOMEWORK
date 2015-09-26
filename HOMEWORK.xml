@@ -15,6 +15,20 @@
         <next>
           <block type="oled_drawtext" id="5">
             <field name="TEXT">4+5=</field>
+            <next>
+              <block type="oled_setcursor" id="19" inline="true">
+                <value name="STARTX">
+                  <block type="math_number" id="20">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+                <value name="STARTY">
+                  <block type="math_number" id="21">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+              </block>
+            </next>
           </block>
         </next>
       </block>
