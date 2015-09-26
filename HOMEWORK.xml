@@ -25,7 +25,7 @@
       </block>
     </next>
   </block>
-  <block type="oled_setcursor" id="2" inline="true" x="315" y="205">
+  <block type="oled_setcursor" id="2" inline="true" disabled="true" x="224" y="208">
     <value name="STARTX">
       <block type="math_number" id="3">
         <field name="NUM">0</field>
@@ -37,7 +37,7 @@
       </block>
     </value>
     <next>
-      <block type="oled_drawtext" id="5">
+      <block type="oled_drawtext" id="5" disabled="true">
         <field name="TEXT">4+5=</field>
       </block>
     </next>
