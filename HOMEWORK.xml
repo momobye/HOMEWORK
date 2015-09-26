@@ -16,58 +16,61 @@
           <block type="oled_drawtext" id="89">
             <field name="TEXT">4+5=</field>
             <next>
-              <block type="oled_drawnumber" id="98" inline="true">
-                <value name="NUMBER">
-                  <block type="math_arithmetic" id="108" inline="true">
-                    <field name="OP">ADD</field>
-                    <value name="A">
-                      <block type="math_number" id="117">
-                        <field name="NUM">2456</field>
-                      </block>
-                    </value>
-                    <value name="B">
-                      <block type="math_number" id="118">
-                        <field name="NUM">43545754</field>
-                      </block>
-                    </value>
+              <block type="oled_linerect" id="248">
+                <field name="OBJECT">LINE</field>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="oled_drawnumber" id="98" inline="true" disabled="true" x="105" y="225">
+    <value name="NUMBER">
+      <block type="math_arithmetic" id="108" inline="true">
+        <field name="OP">ADD</field>
+        <value name="A">
+          <block type="math_number" id="117">
+            <field name="NUM">2456</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="math_number" id="118">
+            <field name="NUM">43545754</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="robot_delay" id="149" inline="true" disabled="true">
+        <value name="DELAY">
+          <block type="math_number" id="182">
+            <field name="NUM">2000</field>
+          </block>
+        </value>
+        <next>
+          <block type="oled_drawtext" id="225" disabled="true">
+            <field name="TEXT">Sorry i am bad at math...</field>
+            <next>
+              <block type="robot_delay" id="226" inline="true" disabled="true">
+                <value name="DELAY">
+                  <block type="math_number" id="227">
+                    <field name="NUM">1000</field>
                   </block>
                 </value>
                 <next>
-                  <block type="robot_delay" id="149" inline="true">
-                    <value name="DELAY">
-                      <block type="math_number" id="182">
-                        <field name="NUM">2000</field>
-                      </block>
-                    </value>
+                  <block type="oled_drawtext" id="228" disabled="true">
+                    <field name="TEXT">the Answer is...</field>
                     <next>
-                      <block type="oled_drawtext" id="225">
-                        <field name="TEXT">Sorry i am bad at math...</field>
+                      <block type="robot_delay" id="229" inline="true" disabled="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="230">
+                            <field name="NUM">1000</field>
+                          </block>
+                        </value>
                         <next>
-                          <block type="robot_delay" id="226" inline="true">
-                            <value name="DELAY">
-                              <block type="math_number" id="227">
-                                <field name="NUM">1000</field>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="oled_drawtext" id="228">
-                                <field name="TEXT">the Answer is...</field>
-                                <next>
-                                  <block type="robot_delay" id="229" inline="true">
-                                    <value name="DELAY">
-                                      <block type="math_number" id="230">
-                                        <field name="NUM">1000</field>
-                                      </block>
-                                    </value>
-                                    <next>
-                                      <block type="oled_drawtext" id="233">
-                                        <field name="TEXT">9?</field>
-                                      </block>
-                                    </next>
-                                  </block>
-                                </next>
-                              </block>
-                            </next>
+                          <block type="oled_drawtext" id="233" disabled="true">
+                            <field name="TEXT">9?</field>
                           </block>
                         </next>
                       </block>
