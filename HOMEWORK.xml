@@ -17,7 +17,7 @@
             <field name="TEXT">4+5=</field>
             <next>
               <block type="oled_linerect" id="248">
-                <field name="OBJECT">LINE</field>
+                <field name="OBJECT">RECT</field>
               </block>
             </next>
           </block>
